@@ -1,7 +1,7 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
+" Vundle stuff: Pluginsj
+set nocompatible
+filetype off
 
-" set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 set shell=/bin/bash
 call vundle#begin()
@@ -18,12 +18,15 @@ Plugin 'scrooloose/nerdtree'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-syntax on
-filetype indent on
+" Random editing goodies
+syntax on             " Syntax highlight
+filetype indent on    " Indent based on file typej
 set shiftwidth=2
 set expandtab
 set tabstop=2
 set background=dark
+set number
+set wrap
 
 :map <f2> :wa<cr>
 :map <f3> :cp<cr>
