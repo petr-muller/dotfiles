@@ -1,0 +1,25 @@
+[user]
+	email = muller@redhat.com
+	name = Petr Muller
+[alias]
+	co = checkout
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  rb = rebase
+[color]
+	branch = true
+	diff = true
+	interactive = true
+  status = true
+	ui = true
+[merge]
+  tool = vimdiff
+[diff]
+  external = git_diff_wrapper
+[pager]
+  diff =
+[push]
+	default = simple
+[rebase]
+	autostash = true
+[stash]
+	showpatch = true
