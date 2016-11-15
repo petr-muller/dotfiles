@@ -25,10 +25,22 @@ set background=dark
 :map <f9> :wa<cr>:make<cr>
 :map <f10> :cl<cr><cr>
 :map <f12> :wqa<cr>
+noremap <Up> <nop>
+noremap <Down> <nop>
+noremap <Left> <nop>
+noremap <Right> <nop>
+inoremap jj <Esc>
 :highlight RedundantSpaces ctermbg=red guibg=red
 :match RedundantSpaces /\s\+$\| \+\ze\t/
 Bundle 'wakatime/vim-wakatime'
 Plugin 'bling/vim-airline'
 Plugin 'luochen1990/rainbow'
+Plugin 'tpope/vim-fugitive'
+Plugin 'noahfrederick/vim-skeleton'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'mfukar/robotframework-vim'
+Plugin 'scrooloose/nerdtree'
 let g:rainbow_active = 1
 set laststatus=2
+au BufRead,BufNewFile *.robot setfiletype robot

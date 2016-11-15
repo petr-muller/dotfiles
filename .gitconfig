@@ -1,10 +1,15 @@
 [user]
-	email = muller@redhat.com
+	email = petr.muller@sap.com
 	name = Petr Muller
 [alias]
 	co = checkout
   lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
   rb = rebase
+  dt = difftool
+  st = status
+  authors = shortlog -s -n -e
+  tree = log --oneline --decorate --graph
+  publish-as = push --set-upstream origin
 [color]
 	branch = true
 	diff = true
@@ -14,7 +19,9 @@
 [merge]
   tool = vimdiff
 [diff]
-  external = git_diff_wrapper
+  tool = vimdiff
+[difftool]
+  prompt = false
 [pager]
   diff =
 [push]
@@ -23,3 +30,7 @@
 	autostash = true
 [stash]
 	showpatch = true
+[gitreview]
+	remote = origin
+[core]
+	editor = vim
