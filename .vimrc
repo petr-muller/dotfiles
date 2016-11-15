@@ -3,8 +3,18 @@ filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
+set shell=/bin/bash
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
+Bundle 'wakatime/vim-wakatime'
+Plugin 'bling/vim-airline'
+Plugin 'luochen1990/rainbow'
+Plugin 'tpope/vim-fugitive'
+Plugin 'noahfrederick/vim-skeleton'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'mfukar/robotframework-vim'
+Plugin 'scrooloose/nerdtree'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
@@ -32,15 +42,6 @@ noremap <Right> <nop>
 inoremap jj <Esc>
 :highlight RedundantSpaces ctermbg=red guibg=red
 :match RedundantSpaces /\s\+$\| \+\ze\t/
-Bundle 'wakatime/vim-wakatime'
-Plugin 'bling/vim-airline'
-Plugin 'luochen1990/rainbow'
-Plugin 'tpope/vim-fugitive'
-Plugin 'noahfrederick/vim-skeleton'
-Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown'
-Plugin 'mfukar/robotframework-vim'
-Plugin 'scrooloose/nerdtree'
 let g:rainbow_active = 1
 set laststatus=2
 au BufRead,BufNewFile *.robot setfiletype robot
