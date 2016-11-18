@@ -43,6 +43,7 @@ noremap <Down> <nop>
 noremap <Left> <nop>
 noremap <Right> <nop>
 inoremap jj <Esc>
+:map <Esc> i
 
 noremap ěě @
 noremap ššš #
