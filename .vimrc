@@ -43,6 +43,30 @@ noremap <Down> <nop>
 noremap <Left> <nop>
 noremap <Right> <nop>
 inoremap jj <Esc>
+
+noremap ěě @
+noremap ššš #
+noremap čč $
+noremap řř ~
+noremap žž ^
+noremap ýý &
+noremap áá *
+noremap íí {
+noremap éé }
+noremap úú [
+noremap ůů ;
+inoremap ěě @
+inoremap ššš #
+inoremap čč $
+inoremap řř ~
+inoremap žž ^
+inoremap ýý &
+inoremap áá *
+inoremap íí {
+inoremap éé }
+inoremap úú [
+inoremap ůů ;
+
 :highlight RedundantSpaces ctermbg=red guibg=red
 :match RedundantSpaces /\s\+$\| \+\ze\t/
 let g:rainbow_active = 1
