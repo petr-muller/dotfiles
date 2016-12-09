@@ -1,4 +1,4 @@
-" Vundle stuff: Pluginsj
+" Vundle stuff: Plugins
 set nocompatible
 filetype off
 
