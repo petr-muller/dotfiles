@@ -19,6 +19,7 @@ Plugin 'tmhedberg/SimpylFold'
 Plugin 'scrooloose/syntastic'
 Plugin 'nvie/vim-flake8'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
@@ -49,6 +50,7 @@ au BufNewFile,BufRead *.py:
   \ set fileformat=unix
 
 nnoremap <space> za
+map <C-n> :NERDTreeToggle<CR>
 
 noremap <Up> <nop>
 noremap <Down> <nop>
