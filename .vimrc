@@ -15,35 +15,51 @@ Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'mfukar/robotframework-vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'tmhedberg/SimpylFold'
+Bundle 'Valloric/YouCompleteMe'
+Plugin 'scrooloose/syntastic'
+Plugin 'nvie/vim-flake8'
+Plugin 'altercation/vim-colors-solarized'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
 " Random editing goodies
+let python_highlight_all = 1
 syntax on             " Syntax highlight
 filetype indent on    " Indent based on file typej
 set shiftwidth=2
 set expandtab
 set tabstop=2
 set background=dark
+colorscheme solarized
 set number
 set wrap
 
-:map <f2> :wa<cr>
-:map <f3> :cp<cr>
-:map <f4> :cn<cr>
-:map <f5> :wN<cr>
-:map <f6> :wn<cr>
-:map <f7> <c-w>h
-:map <f8> <c-w>l
-:map <f9> :wa<cr>:make<cr>
-:map <f10> :cl<cr><cr>
-:map <f12> :wqa<cr>
+set foldmethod=indent
+set foldlevel=99
+
+let g:ycm_autoclose_preview_window_after_completion=1
+
+au BufNewFile,BufRead *.py:
+  \ set tabstop=2
+  \ set softtabstop=2
+  \ set shiftwidth=2
+  \ set textwidth=119
+  \ set expandtab
+  \ set autoindent
+  \ set fileformat=unix
+
+nnoremap <space> za
+
 noremap <Up> <nop>
 noremap <Down> <nop>
 noremap <Left> <nop>
 noremap <Right> <nop>
-inoremap jj <Esc>
-:map <Esc> i
+
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-H> <C-W><C-H>
+nnoremap <C-L> <C-W><C-L>
 
 noremap ěě @
 noremap ššš #
