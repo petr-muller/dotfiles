@@ -19,6 +19,8 @@ Plugin 'tmhedberg/SimpylFold'
 Plugin 'scrooloose/syntastic'
 Plugin 'nvie/vim-flake8'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
@@ -33,6 +35,7 @@ set background=dark
 colorscheme solarized
 set number
 set wrap
+set hlsearch
 
 set foldmethod=indent
 set foldlevel=99
@@ -49,6 +52,8 @@ au BufNewFile,BufRead *.py:
   \ set fileformat=unix
 
 nnoremap <space> za
+
+:map <Esc> i
 
 noremap <Up> <nop>
 noremap <Down> <nop>

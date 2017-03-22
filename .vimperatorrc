@@ -1,9 +1,4 @@
-autocmd LocationChange .* js modes.passAllKeys = false
-autocmd LocationChange rememberthemilk\\.com js modes.passAllKeys = true
-autocmd LocationChange mail\\.protonmail\\.com js modes.passAllKeys = true
-
 noremap l gt
 noremap h gT
 
-set wildmode autocomplete
 set cpt=l
