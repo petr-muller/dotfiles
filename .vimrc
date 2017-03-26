@@ -27,6 +27,7 @@ filetype plugin indent on    " required
 let python_highlight_all = 1
 syntax on             " Syntax highlight
 filetype indent on    " Indent based on file typej
+set cursorline
 set shiftwidth=2
 set expandtab
 set tabstop=2
@@ -34,6 +35,7 @@ set background=dark
 colorscheme solarized
 set number
 set wrap
+set wildmenu
 
 set foldmethod=indent
 set foldlevel=99
