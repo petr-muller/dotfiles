@@ -20,6 +20,8 @@ Plugin 'scrooloose/syntastic'
 Plugin 'nvie/vim-flake8'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'sjl/gundo.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
@@ -36,6 +38,9 @@ colorscheme solarized
 set number
 set wrap
 set wildmenu
+set incsearch
+set hlsearch
+
 
 set foldmethod=indent
 set foldlevel=99
@@ -122,3 +127,10 @@ let g:airline_right_alt_sep = ''
 let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
+
+let g:syntastic_python_python_exec = '/usr/bin/python3'
+
+let mapleader=","
+nmap <leader>ne :NERDTree<cr>
+nnoremap <leader><space> :nohlsearch<CR>
+nnoremap <leader>u :GundoToggle<CR>
