@@ -21,6 +21,9 @@ Plugin 'nvie/vim-flake8'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'sjl/gundo.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
@@ -28,6 +31,7 @@ filetype plugin indent on    " required
 let python_highlight_all = 1
 syntax on             " Syntax highlight
 filetype indent on    " Indent based on file typej
+set cursorline
 set shiftwidth=2
 set expandtab
 set tabstop=2
@@ -36,6 +40,8 @@ colorscheme solarized
 set number
 set wrap
 set hlsearch
+set wildmenu
+set incsearch
 
 set foldmethod=indent
 set foldlevel=99
@@ -52,6 +58,7 @@ au BufNewFile,BufRead *.py:
   \ set fileformat=unix
 
 nnoremap <space> za
+map <C-n> :NERDTreeToggle<CR>
 
 :map <Esc> i
 
@@ -123,3 +130,10 @@ let g:airline_right_alt_sep = ''
 let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
+
+let g:syntastic_python_python_exec = '/usr/bin/python3'
+
+let mapleader=","
+nmap <leader>ne :NERDTree<cr>
+nnoremap <leader><space> :nohlsearch<CR>
+nnoremap <leader>u :GundoToggle<CR>
