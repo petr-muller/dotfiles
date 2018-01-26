@@ -136,3 +136,5 @@ let mapleader=","
 nmap <leader>ne :NERDTree<cr>
 nnoremap <leader><space> :nohlsearch<CR>
 nnoremap <leader>u :GundoToggle<CR>
+
+let g:wakatime_PythonBinary = '/usr/bin/python3'
