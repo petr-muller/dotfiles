@@ -61,8 +61,6 @@ au BufNewFile,BufRead *.py:
 nnoremap <space> za
 map <C-n> :NERDTreeToggle<CR>
 
-:map <Esc> i
-
 noremap <Up> <nop>
 noremap <Down> <nop>
 noremap <Left> <nop>
