@@ -26,6 +26,9 @@ Plugin 'sjl/gundo.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'kana/vim-textobj-user'
+Plugin 'reedes/vim-textobj-quote'
+
 call vundle#end()            " required
 filetype plugin indent on    " required
 
@@ -140,3 +143,10 @@ nnoremap <leader><space> :nohlsearch<CR>
 nnoremap <leader>u :GundoToggle<CR>
 
 let g:wakatime_PythonBinary = '/usr/bin/python3'
+
+augroup textobj_quote
+  autocmd!
+  autocmd FileType markdown call textobj#quote#init()
+  autocmd FileType textile call textobj#quote#init()
+  autocmd FileType text call textobj#quote#init({'educate': 0})
+augroup END
