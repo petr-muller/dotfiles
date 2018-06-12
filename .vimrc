@@ -1,12 +1,21 @@
-" Vundle stuff: Plugins
+" Vundle stuff: Setup
 set nocompatible
 filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
 set shell=/bin/bash
 call vundle#begin()
+
+" Vundle stuff: Plugins
+
+" Plugin Infrastructure
 Plugin 'gmarik/Vundle.vim'
+
+" Tracking / Productivity
+
+" Tracking time spent programming: https://wakatime.com/
 Bundle 'wakatime/vim-wakatime'
+
 Plugin 'bling/vim-airline'
 Plugin 'luochen1990/rainbow'
 Plugin 'tpope/vim-fugitive'
@@ -29,7 +38,8 @@ Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'kana/vim-textobj-user'
 Plugin 'reedes/vim-textobj-quote'
 
-call vundle#end()            " required
+call vundle#end()
+
 filetype plugin indent on    " required
 
 " Random editing goodies
@@ -150,3 +160,14 @@ augroup textobj_quote
   autocmd FileType textile call textobj#quote#init()
   autocmd FileType text call textobj#quote#init({'educate': 0})
 augroup END
+
+" Enable Elite mode, No ARRRROWWS!!!!
+let g:elite_mode=1
+
+" Disable arrow movement, resize splits instead.
+if get(g:, 'elite_mode')
+	nnoremap <Up>    :resize +2<CR>
+	nnoremap <Down>  :resize -2<CR>
+	nnoremap <Left>  :vertical resize +2<CR>
+	nnoremap <Right> :vertical resize -2<CR>
+endif
