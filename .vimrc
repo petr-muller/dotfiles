@@ -13,10 +13,14 @@ Plugin 'gmarik/Vundle.vim'
 
 " Tracking / Productivity
 
-" Tracking time spent programming: https://wakatime.com/
+" Tracking time spent programming (https://wakatime.com/)
 Bundle 'wakatime/vim-wakatime'
 
+" UI Enhancements
+
+" Airline: Improved VIM status line
 Plugin 'bling/vim-airline'
+
 Plugin 'luochen1990/rainbow'
 Plugin 'tpope/vim-fugitive'
 Plugin 'noahfrederick/vim-skeleton'
@@ -42,6 +46,9 @@ call vundle#end()
 
 filetype plugin indent on    " required
 
+" wrap lines when buffer is too narrow
+set wrap
+
 " Random editing goodies
 let python_highlight_all = 1
 syntax on             " Syntax highlight
@@ -53,7 +60,6 @@ set tabstop=2
 set background=dark
 colorscheme solarized
 set number
-set wrap
 set hlsearch
 set wildmenu
 set incsearch
