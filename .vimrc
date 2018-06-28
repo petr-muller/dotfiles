@@ -21,7 +21,11 @@ Bundle 'wakatime/vim-wakatime'
 " Airline: Improved VIM status line
 Plugin 'bling/vim-airline'
 
+" General syntax helpers
+
+" Rainbow: Colorize paired elements, such as parentheses
 Plugin 'luochen1990/rainbow'
+
 Plugin 'tpope/vim-fugitive'
 Plugin 'noahfrederick/vim-skeleton'
 Plugin 'godlygeek/tabular'
@@ -41,10 +45,14 @@ Plugin 'davidhalter/jedi-vim'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'kana/vim-textobj-user'
 Plugin 'reedes/vim-textobj-quote'
+Plugin 'ambv/black'
 
 call vundle#end()
 
 filetype plugin indent on    " required
+
+let g:black_virtualenv="/home/afri/vim/black"
+autocmd BufWritePre *.py execute ':Black'
 
 " wrap lines when buffer is too narrow
 set wrap
@@ -68,6 +76,8 @@ set foldmethod=indent
 set foldlevel=99
 
 let g:ycm_autoclose_preview_window_after_completion=1
+
+let g:black_linelength=100
 
 au BufNewFile,BufRead *.py:
   \ set tabstop=2
