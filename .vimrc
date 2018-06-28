@@ -25,12 +25,20 @@ Plugin 'bling/vim-airline'
 
 " Rainbow: Colorize paired elements, such as parentheses
 Plugin 'luochen1990/rainbow'
-
-Plugin 'tpope/vim-fugitive'
-Plugin 'noahfrederick/vim-skeleton'
+" Tabular: Aligning text elements to each other, such as for tables
 Plugin 'godlygeek/tabular'
+
+" Integrations
+
+" Fugitive: git integration. I rarely use it but sometimes it can be useful
+Plugin 'tpope/vim-fugitive'
+
+" Python
+
+" Black: Python Formatter
+Plugin 'ambv/black'
+
 Plugin 'plasticboy/vim-markdown'
-Plugin 'mfukar/robotframework-vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'scrooloose/syntastic'
@@ -45,11 +53,17 @@ Plugin 'davidhalter/jedi-vim'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'kana/vim-textobj-user'
 Plugin 'reedes/vim-textobj-quote'
-Plugin 'ambv/black'
 
 call vundle#end()
 
 filetype plugin indent on    " required
+
+let mapleader=","
+
+" git
+nmap <leader>G :wa<CR>:Gstatus<CR>
+
+" DRAGONS
 
 let g:black_virtualenv="/home/afri/vim/black"
 autocmd BufWritePre *.py execute ':Black'
@@ -58,6 +72,7 @@ autocmd BufWritePre *.py execute ':Black'
 set wrap
 
 " Random editing goodies
+set autowrite
 let python_highlight_all = 1
 syntax on             " Syntax highlight
 filetype indent on    " Indent based on file typej
@@ -163,7 +178,6 @@ let g:airline_symbols.linenr = ''
 
 let g:syntastic_python_python_exec = '/usr/bin/python3'
 
-let mapleader=","
 nmap <leader>ne :NERDTree<cr>
 nnoremap <leader><space> :nohlsearch<CR>
 nnoremap <leader>u :GundoToggle<CR>
