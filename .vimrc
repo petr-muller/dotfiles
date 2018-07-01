@@ -104,6 +104,7 @@ au BufNewFile,BufRead *.py:
   \ set fileformat=unix
 
 nnoremap <space> za
+noremap <Leader>s :update<CR>
 map <C-n> :NERDTreeToggle<CR>
 
 noremap <Up> <nop>
