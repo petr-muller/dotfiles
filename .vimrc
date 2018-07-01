@@ -38,7 +38,6 @@ Plugin 'tpope/vim-fugitive'
 " Black: Python Formatter
 Plugin 'ambv/black'
 
-Plugin 'plasticboy/vim-markdown'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'scrooloose/syntastic'
