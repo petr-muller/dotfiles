@@ -38,6 +38,11 @@ Plugin 'tpope/vim-fugitive'
 " Black: Python Formatter
 Plugin 'ambv/black'
 
+" Go
+
+" Go: Go development plugin for Go
+Plugin  'fatih/vim-go'
+
 Plugin 'scrooloose/nerdtree'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'scrooloose/syntastic'
@@ -64,7 +69,7 @@ nmap <leader>G :wa<CR>:Gstatus<CR>
 
 " DRAGONS
 
-let g:black_virtualenv="/home/afri/vim/black"
+let g:black_virtualenv="/home/remote/pmuller/.vim/black"
 autocmd BufWritePre *.py execute ':Black'
 
 " wrap lines when buffer is too narrow

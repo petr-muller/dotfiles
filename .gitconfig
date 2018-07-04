@@ -35,3 +35,5 @@
 	remote = origin
 [core]
 	editor = vim
+[includeIf "gitdir:~/Projects/RH/**"]
+  path = .gitconfig-redhat
