@@ -21,6 +21,9 @@ Bundle 'wakatime/vim-wakatime'
 " Airline: Improved VIM status line
 Plugin 'bling/vim-airline'
 
+" NerdTree: File explorer
+Plugin 'scrooloose/nerdtree'
+
 " General syntax helpers
 
 " Rainbow: Colorize paired elements, such as parentheses
@@ -43,7 +46,6 @@ Plugin 'ambv/black'
 " Go: Go development plugin for Go
 Plugin  'fatih/vim-go'
 
-Plugin 'scrooloose/nerdtree'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'scrooloose/syntastic'
 Plugin 'nvie/vim-flake8'
@@ -110,6 +112,9 @@ au BufNewFile,BufRead *.py:
 nnoremap <space> za
 noremap <Leader>s :update<CR>
 map <C-n> :NERDTreeToggle<CR>
+let NERDTreeQuitOnOpen = 1
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
 
 noremap <Up> <nop>
 noremap <Down> <nop>
