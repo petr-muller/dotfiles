@@ -20,9 +20,12 @@ Bundle 'wakatime/vim-wakatime'
 
 " Airline: Improved VIM status line
 Plugin 'bling/vim-airline'
-
 " NerdTree: File explorer
 Plugin 'scrooloose/nerdtree'
+
+" Shortcuts
+" Unimpaired: Handy bracket mappings
+Plugin 'tpope/vim-unimpaired'
 
 " General syntax helpers
 
@@ -30,6 +33,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'luochen1990/rainbow'
 " Tabular: Aligning text elements to each other, such as for tables
 Plugin 'godlygeek/tabular'
+" Syntastic: Syntax checking
+Plugin 'scrooloose/syntastic'
 
 " Integrations
 
@@ -48,7 +53,6 @@ Plugin 'tmhedberg/SimpylFold'
 " Go: Go development plugin for Go
 Plugin  'fatih/vim-go'
 
-Plugin 'scrooloose/syntastic'
 Plugin 'nvie/vim-flake8'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'tpope/vim-surround'
@@ -188,6 +192,10 @@ let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
 
 let g:syntastic_python_python_exec = '/usr/bin/python3'
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 nmap <leader>ne :NERDTree<cr>
 nnoremap <leader><space> :nohlsearch<CR>
