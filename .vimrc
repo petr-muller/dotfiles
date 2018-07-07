@@ -40,13 +40,14 @@ Plugin 'tpope/vim-fugitive'
 
 " Black: Python Formatter
 Plugin 'ambv/black'
+" SimpylFold: Simple Python folding
+Plugin 'tmhedberg/SimpylFold'
 
 " Go
 
 " Go: Go development plugin for Go
 Plugin  'fatih/vim-go'
 
-Plugin 'tmhedberg/SimpylFold'
 Plugin 'scrooloose/syntastic'
 Plugin 'nvie/vim-flake8'
 Plugin 'altercation/vim-colors-solarized'
