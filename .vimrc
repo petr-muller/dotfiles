@@ -53,7 +53,6 @@ Plugin 'tmhedberg/SimpylFold'
 " Go: Go development plugin for Go
 Plugin  'fatih/vim-go'
 
-Plugin 'nvie/vim-flake8'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
