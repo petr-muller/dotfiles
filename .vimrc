@@ -22,6 +22,8 @@ Bundle 'wakatime/vim-wakatime'
 Plugin 'bling/vim-airline'
 " NerdTree: File explorer
 Plugin 'scrooloose/nerdtree'
+" TagBar: Tag explorer
+Plugin 'majutsushi/tagbar'
 
 " Shortcuts
 " Unimpaired: Handy bracket mappings
@@ -35,6 +37,8 @@ Plugin 'luochen1990/rainbow'
 Plugin 'godlygeek/tabular'
 " Syntastic: Syntax checking
 Plugin 'scrooloose/syntastic'
+" Gutentags: Manage tag files
+Plugin 'ludovicchabant/vim-gutentags'
 
 " Integrations
 
@@ -205,6 +209,7 @@ let g:syntastic_go_checkers = ['gofmt', 'golint']
 nmap <leader>ne :NERDTree<cr>
 nnoremap <leader><space> :nohlsearch<CR>
 nnoremap <leader>u :GundoToggle<CR>
+nnoremap <leader>T :TagbarToggle<CR>
 
 let g:wakatime_PythonBinary = '/usr/bin/python3'
 
