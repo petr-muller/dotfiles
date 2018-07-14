@@ -53,7 +53,11 @@ Plugin 'tmhedberg/SimpylFold'
 " Go: Go development plugin for Go
 Plugin  'fatih/vim-go'
 
+" Themes
+
+" Solarized: Precision colors for machines and people
 Plugin 'altercation/vim-colors-solarized'
+
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
