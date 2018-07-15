@@ -39,6 +39,8 @@ Plugin 'godlygeek/tabular'
 Plugin 'scrooloose/syntastic'
 " Gutentags: Manage tag files
 Plugin 'ludovicchabant/vim-gutentags'
+" Surround: Quoting and parenthesizing made simple
+Plugin 'tpope/vim-surround'
 
 " Integrations
 
@@ -62,7 +64,6 @@ Plugin  'fatih/vim-go'
 " Solarized: Precision colors for machines and people
 Plugin 'altercation/vim-colors-solarized'
 
-Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'sjl/gundo.vim'
