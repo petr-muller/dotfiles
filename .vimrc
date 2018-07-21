@@ -24,10 +24,14 @@ Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdtree'
 " TagBar: Tag explorer
 Plugin 'majutsushi/tagbar'
+" WindowSwap: Swap splits
+Plugin 'wesQ3/vim-windowswap'
 
 " Shortcuts
 " Unimpaired: Handy bracket mappings
 Plugin 'tpope/vim-unimpaired'
+" Repeat: Support dot repeat for plugins
+Plugin 'tpope/vim-repeat'
 
 " General syntax helpers
 
@@ -64,7 +68,6 @@ Plugin  'fatih/vim-go'
 " Solarized: Precision colors for machines and people
 Plugin 'altercation/vim-colors-solarized'
 
-Plugin 'tpope/vim-repeat'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'sjl/gundo.vim'
 Plugin 'ctrlpvim/ctrlp.vim'

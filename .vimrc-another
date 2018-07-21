@@ -1,6 +1,4 @@
 " Utility
-Plugin 'BufOnly.vim'
-Plugin 'wesQ3/vim-windowswap'
 Plugin 'SirVer/ultisnips'
 Plugin 'junegunn/fzf.vim'
 Plugin 'junegunn/fzf'
@@ -20,7 +18,6 @@ Plugin 'tomtom/tcomment_vim'
 Plugin 'tobyS/vmustache'
 Plugin 'janko-m/vim-test'
 Plugin 'maksimr/vim-jsbeautify'
-Plugin 'vim-syntastic/syntastic'
 Plugin 'neomake/neomake'
 
 " Markdown / Writting
