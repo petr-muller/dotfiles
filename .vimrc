@@ -203,6 +203,7 @@ let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
 
+let g:syntastic_python_pylint_args = "--rcfile=.pylintrc"
 let g:syntastic_python_python_exec = '/usr/bin/python3'
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
