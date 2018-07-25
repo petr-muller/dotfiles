@@ -22,6 +22,8 @@ Bundle 'wakatime/vim-wakatime'
 Plugin 'bling/vim-airline'
 " NerdTree: File explorer
 Plugin 'scrooloose/nerdtree'
+" NerdTree Git: Show git status flags in NerdTree
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 " TagBar: Tag explorer
 Plugin 'majutsushi/tagbar'
 " WindowSwap: Swap splits
@@ -68,7 +70,6 @@ Plugin  'fatih/vim-go'
 " Solarized: Precision colors for machines and people
 Plugin 'altercation/vim-colors-solarized'
 
-Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'sjl/gundo.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'davidhalter/jedi-vim'

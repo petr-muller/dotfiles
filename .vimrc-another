@@ -31,9 +31,6 @@ Plugin 'kablamo/vim-git-log'
 Plugin 'gregsexton/gitv'
 "Plugin 'jaxbot/github-issues.vim'
 
-" PHP Support
-Plugin 'tobyS/pdv'
-
 " Elixir Support
 Plugin 'avdgaag/vim-phoenix'
 Plugin 'mattreduce/vim-mix'
