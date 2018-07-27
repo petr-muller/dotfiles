@@ -52,6 +52,9 @@ Plugin 'tpope/vim-surround'
 
 " Fugitive: git integration. I rarely use it but sometimes it can be useful
 Plugin 'tpope/vim-fugitive'
+" FuzzyFinder: Well, fuzzy finder
+Plugin 'junegunn/fzf.vim'
+Plugin 'junegunn/fzf'
 
 " Python
 
@@ -70,7 +73,6 @@ Plugin  'fatih/vim-go'
 " Solarized: Precision colors for machines and people
 Plugin 'altercation/vim-colors-solarized'
 
-Plugin 'sjl/gundo.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'bronson/vim-trailing-whitespace'
