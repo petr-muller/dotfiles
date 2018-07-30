@@ -1,6 +1,5 @@
 " Utility
 Plugin 'SirVer/ultisnips'
-Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'benmills/vimux'
 Plugin 'jeetsukumaran/vim-buffergator'
 Plugin 'gilsondev/searchtasks.vim'
