@@ -1,6 +1,5 @@
 " Utility
 Plugin 'SirVer/ultisnips'
-Plugin 'benmills/vimux'
 Plugin 'jeetsukumaran/vim-buffergator'
 Plugin 'gilsondev/searchtasks.vim'
 Plugin 'Shougo/neocomplete.vim'
