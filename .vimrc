@@ -36,6 +36,8 @@ Plugin 'tpope/vim-unimpaired'
 Plugin 'tpope/vim-repeat'
 " Textobj User: Create new text object (prerequisite for `vim-textobj-quote`)
 Plugin 'kana/vim-textobj-user'
+" Buffergator: List, select and switch between buffers
+Plugin 'jeetsukumaran/vim-buffergator'
 
 " General syntax helpers
 
@@ -53,6 +55,8 @@ Plugin 'tpope/vim-surround'
 Plugin 'davidhalter/jedi-vim'
 " AnsiEsc: Conceal & highlight ANSI sequences
 Plugin 'AnsiEsc.vim'
+" Trailing Whitespace: Hightlight and remove trailing whitespace
+Plugin 'bronson/vim-trailing-whitespace'
 
 " Integrations
 
@@ -79,7 +83,6 @@ Plugin  'fatih/vim-go'
 " Solarized: Precision colors for machines and people
 Plugin 'altercation/vim-colors-solarized'
 
-Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'reedes/vim-textobj-quote'
 
 call vundle#end()
