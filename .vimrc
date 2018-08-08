@@ -34,6 +34,8 @@ Plugin 'wesQ3/vim-windowswap'
 Plugin 'tpope/vim-unimpaired'
 " Repeat: Support dot repeat for plugins
 Plugin 'tpope/vim-repeat'
+" Textobj User: Create new text object (prerequisite for `vim-textobj-quote`)
+Plugin 'kana/vim-textobj-user'
 
 " General syntax helpers
 
@@ -49,6 +51,8 @@ Plugin 'ludovicchabant/vim-gutentags'
 Plugin 'tpope/vim-surround'
 " Jedi: Autocompletion
 Plugin 'davidhalter/jedi-vim'
+" AnsiEsc: Conceal & highlight ANSI sequences
+Plugin 'AnsiEsc.vim'
 
 " Integrations
 
@@ -76,7 +80,6 @@ Plugin  'fatih/vim-go'
 Plugin 'altercation/vim-colors-solarized'
 
 Plugin 'bronson/vim-trailing-whitespace'
-Plugin 'kana/vim-textobj-user'
 Plugin 'reedes/vim-textobj-quote'
 
 call vundle#end()
