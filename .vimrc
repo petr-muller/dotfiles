@@ -57,6 +57,8 @@ Plugin 'davidhalter/jedi-vim'
 Plugin 'AnsiEsc.vim'
 " Trailing Whitespace: Hightlight and remove trailing whitespace
 Plugin 'bronson/vim-trailing-whitespace'
+" Quotes: Use typographic (curly) quotes in text
+Plugin 'reedes/vim-textobj-quote'
 
 " Integrations
 
@@ -82,8 +84,6 @@ Plugin  'fatih/vim-go'
 
 " Solarized: Precision colors for machines and people
 Plugin 'altercation/vim-colors-solarized'
-
-Plugin 'reedes/vim-textobj-quote'
 
 call vundle#end()
 

@@ -27,7 +27,6 @@ Plugin 'gregsexton/gitv'
 "Plugin 'jaxbot/github-issues.vim'
 
 " Elixir Support
-Plugin 'avdgaag/vim-phoenix'
 Plugin 'mattreduce/vim-mix'
 Plugin 'BjRo/vim-extest'
 Plugin 'frost/vim-eh-docs'
