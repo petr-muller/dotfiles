@@ -1,6 +1,5 @@
 " Utility
 Plugin 'SirVer/ultisnips'
-Plugin 'jeetsukumaran/vim-buffergator'
 Plugin 'gilsondev/searchtasks.vim'
 Plugin 'Shougo/neocomplete.vim'
 Plugin 'tpope/vim-dispatch'
@@ -28,7 +27,6 @@ Plugin 'gregsexton/gitv'
 "Plugin 'jaxbot/github-issues.vim'
 
 " Elixir Support
-Plugin 'avdgaag/vim-phoenix'
 Plugin 'mattreduce/vim-mix'
 Plugin 'BjRo/vim-extest'
 Plugin 'frost/vim-eh-docs'
