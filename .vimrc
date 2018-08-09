@@ -219,7 +219,6 @@ let g:syntastic_go_checkers = ['gofmt', 'golint']
 
 nmap <leader>ne :NERDTree<cr>
 nnoremap <leader><space> :nohlsearch<CR>
-nnoremap <leader>u :GundoToggle<CR>
 nnoremap <leader>T :TagbarToggle<CR>
 
 let g:wakatime_PythonBinary = '/usr/bin/python3'
