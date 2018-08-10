@@ -89,15 +89,21 @@ call vundle#end()
 
 filetype plugin indent on    " required
 
+" SHORTCUTS
+
 let mapleader=","
 
 " git
 nmap <leader>G :wa<CR>:Gstatus<CR>
 
-" DRAGONS
+" CONFIGURATION
 
+" Black: This is path to plugin-internal virtualenv with black
 let g:black_virtualenv="/home/remote/pmuller/.vim/black"
+" Black: Reformat Python code on save
 autocmd BufWritePre *.py execute ':Black'
+
+" DRAGONS
 
 " wrap lines when buffer is too narrow
 set wrap
