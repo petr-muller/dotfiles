@@ -38,7 +38,6 @@ Plugin 'lambdatoast/elm.vim'
 
 " Theme / Interface
 Plugin 'ryanoasis/vim-devicons'
-Plugin 'sjl/badwolf'
 Plugin 'tomasr/molokai'
 Plugin 'morhetz/gruvbox'
 Plugin 'zenorocha/dracula-theme', {'rtp': 'vim/'}

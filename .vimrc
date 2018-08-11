@@ -109,7 +109,6 @@ autocmd BufWritePre *.py execute ':Black'
 set wrap
 
 " Random editing goodies
-set autowrite
 let python_highlight_all = 1
 syntax on             " Syntax highlight
 filetype indent on    " Indent based on file typej
