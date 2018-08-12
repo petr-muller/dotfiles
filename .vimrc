@@ -100,6 +100,19 @@ nmap <leader>G :wa<CR>:Gstatus<CR>
 
 " CONFIGURATION
 
+" Highlight all syntax
+syntax on
+" Set indentation rules based on file type
+filetype indent plugin on
+" Wrap lines when buffer is too narrow
+set wrap
+" Highlight current line
+set cursorline
+" Indent with 2 spaces by default
+set shiftwidth=2
+" Insert spaces on tab
+set expandtab
+
 " Black: This is path to plugin-internal virtualenv with black
 let g:black_virtualenv="/home/remote/pmuller/.vim/black"
 " Black: Reformat Python code on save
@@ -107,15 +120,7 @@ autocmd BufWritePre *.py execute ':Black'
 
 " DRAGONS
 
-" wrap lines when buffer is too narrow
-set wrap
-
 " Random editing goodies
-syntax on             " Syntax highlight
-filetype indent on    " Indent based on file typej
-set cursorline
-set shiftwidth=2
-set expandtab
 set tabstop=2
 set background=dark
 colorscheme solarized

@@ -3,13 +3,10 @@ Plugin 'SirVer/ultisnips'
 Plugin 'gilsondev/searchtasks.vim'
 Plugin 'Shougo/neocomplete.vim'
 Plugin 'tpope/vim-dispatch'
-Plugin 'jceb/vim-orgmode'
 Plugin 'tpope/vim-speeddating'
 
 " Generic Programming Support
-Plugin 'honza/vim-snippets'
 Plugin 'Townk/vim-autoclose'
-Plugin 'janko-m/vim-test'
 Plugin 'maksimr/vim-jsbeautify'
 Plugin 'neomake/neomake'
 
@@ -30,10 +27,6 @@ Plugin 'BjRo/vim-extest'
 Plugin 'frost/vim-eh-docs'
 Plugin 'slashmili/alchemist.vim'
 Plugin 'tpope/vim-endwise'
-Plugin 'mhinz/vim-mix-format'
-
-" Elm Support
-Plugin 'lambdatoast/elm.vim'
 
 " Theme / Interface
 Plugin 'ryanoasis/vim-devicons'
@@ -47,7 +40,6 @@ Plugin 'Lokaltog/vim-distinguished'
 Plugin 'chriskempson/base16-vim'
 Plugin 'w0ng/vim-hybrid'
 Plugin 'AlessandroYorba/Sierra'
-Plugin 'daylerees/colour-schemes'
 Plugin 'effkay/argonaut.vim'
 Plugin 'ajh17/Spacegray.vim'
 Plugin 'atelierbram/Base2Tone-vim'
