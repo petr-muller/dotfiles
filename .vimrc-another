@@ -9,7 +9,6 @@ Plugin 'tpope/vim-speeddating'
 " Generic Programming Support
 Plugin 'honza/vim-snippets'
 Plugin 'Townk/vim-autoclose'
-Plugin 'tomtom/tcomment_vim'
 Plugin 'janko-m/vim-test'
 Plugin 'maksimr/vim-jsbeautify'
 Plugin 'neomake/neomake'

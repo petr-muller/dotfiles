@@ -59,6 +59,8 @@ Plugin 'AnsiEsc.vim'
 Plugin 'bronson/vim-trailing-whitespace'
 " Quotes: Use typographic (curly) quotes in text
 Plugin 'reedes/vim-textobj-quote'
+" TComment: Commenting plugins
+Plugin 'tomtom/tcomment_vim'
 
 " Integrations
 
@@ -109,7 +111,6 @@ autocmd BufWritePre *.py execute ':Black'
 set wrap
 
 " Random editing goodies
-let python_highlight_all = 1
 syntax on             " Syntax highlight
 filetype indent on    " Indent based on file typej
 set cursorline
