@@ -112,6 +112,8 @@ set cursorline
 set shiftwidth=2
 " Insert spaces on tab
 set expandtab
+" Show tabs as two spaces wide
+set tabstop=2
 
 " Black: This is path to plugin-internal virtualenv with black
 let g:black_virtualenv="/home/remote/pmuller/.vim/black"
@@ -121,7 +123,6 @@ autocmd BufWritePre *.py execute ':Black'
 " DRAGONS
 
 " Random editing goodies
-set tabstop=2
 set background=dark
 colorscheme solarized
 set number
@@ -137,13 +138,10 @@ let g:ycm_autoclose_preview_window_after_completion=1
 let g:black_linelength=100
 
 au BufNewFile,BufRead *.py:
-  \ set tabstop=2
-  \ set softtabstop=2
-  \ set shiftwidth=2
-  \ set textwidth=119
+  \ set textwidth=100
   \ set expandtab
   \ set autoindent
-  \ set fileformat=unix
+  \ set fileformat
 
 nnoremap <space> za
 nnoremap Q :w\|bd<cr>

@@ -24,7 +24,6 @@ Plugin 'gregsexton/gitv'
 " Elixir Support
 Plugin 'mattreduce/vim-mix'
 Plugin 'BjRo/vim-extest'
-Plugin 'frost/vim-eh-docs'
 Plugin 'slashmili/alchemist.vim'
 Plugin 'tpope/vim-endwise'
 
@@ -60,7 +59,7 @@ set expandtab
 " Always display the status line
 set laststatus=2
 
-" Devicons configuration 
+" Devicons configuration
 let g:webdevicons_conceal_nerdtree_brackets = 1
 let g:WebDevIconsNerdTreeAfterGlyphPadding = ''
 
