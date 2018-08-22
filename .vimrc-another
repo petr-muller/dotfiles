@@ -1,7 +1,6 @@
 " Utility
 Plugin 'SirVer/ultisnips'
 Plugin 'gilsondev/searchtasks.vim'
-Plugin 'Shougo/neocomplete.vim'
 Plugin 'tpope/vim-dispatch'
 Plugin 'tpope/vim-speeddating'
 
@@ -17,7 +16,6 @@ Plugin 'jtratner/vim-flavored-markdown'
 Plugin 'LanguageTool'
 
 " Git Support
-Plugin 'kablamo/vim-git-log'
 Plugin 'gregsexton/gitv'
 "Plugin 'jaxbot/github-issues.vim'
 

@@ -51,7 +51,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'ludovicchabant/vim-gutentags'
 " Surround: Quoting and parenthesizing made simple
 Plugin 'tpope/vim-surround'
-" Jedi: Autocompletion
+" Jedi: Autocompletion for Python
 Plugin 'davidhalter/jedi-vim'
 " AnsiEsc: Conceal & highlight ANSI sequences
 Plugin 'AnsiEsc.vim'
@@ -64,8 +64,10 @@ Plugin 'tomtom/tcomment_vim'
 
 " Integrations
 
-" Fugitive: git integration. I rarely use it but sometimes it can be useful
+" Fugitive: git integration
 Plugin 'tpope/vim-fugitive'
+" Git Log Viewer: better git log integration
+Plugin 'kablamo/vim-git-log'
 " FuzzyFinder: Well, fuzzy finder
 Plugin 'junegunn/fzf.vim'
 Plugin 'junegunn/fzf'
@@ -100,14 +102,11 @@ nmap <leader>G :wa<CR>:Gstatus<CR>
 
 " CONFIGURATION
 
-" Highlight all syntax
-syntax on
+" Editing
 " Set indentation rules based on file type
 filetype indent plugin on
 " Wrap lines when buffer is too narrow
 set wrap
-" Highlight current line
-set cursorline
 " Indent with 2 spaces by default
 set shiftwidth=2
 " Insert spaces on tab
@@ -115,6 +114,17 @@ set expandtab
 " Show tabs as two spaces wide
 set tabstop=2
 
+" UI
+" Highlight all syntax
+syntax on
+" Highlight current line
+set cursorline
+" I am using terminals with dark background themes
+set background=dark
+" Solarized color theme
+colorscheme solarized
+
+" Python
 " Black: This is path to plugin-internal virtualenv with black
 let g:black_virtualenv="/home/remote/pmuller/.vim/black"
 " Black: Reformat Python code on save
@@ -123,8 +133,6 @@ autocmd BufWritePre *.py execute ':Black'
 " DRAGONS
 
 " Random editing goodies
-set background=dark
-colorscheme solarized
 set number
 set hlsearch
 set wildmenu
