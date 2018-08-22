@@ -237,9 +237,8 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_go_checkers = ['gofmt', 'golint']
 
-nmap <leader>ne :NERDTree<cr>
 nnoremap <leader><space> :nohlsearch<CR>
-nnoremap <leader>T :TagbarToggle<CR>
+nnoremap <leader>tb :TagbarToggle<CR>
 
 let g:wakatime_PythonBinary = '/usr/bin/python3'
 
