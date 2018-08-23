@@ -119,6 +119,8 @@ set tabstop=2
 syntax on
 " Highlight current line
 set cursorline
+" Show line numbers
+set number
 " I am using terminals with dark background themes
 set background=dark
 " Solarized color theme
@@ -133,7 +135,6 @@ autocmd BufWritePre *.py execute ':Black'
 " DRAGONS
 
 " Random editing goodies
-set number
 set hlsearch
 set wildmenu
 set incsearch
