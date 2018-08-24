@@ -121,6 +121,8 @@ syntax on
 set cursorline
 " Show line numbers
 set number
+" Highlight all search results
+set hlsearch
 " I am using terminals with dark background themes
 set background=dark
 " Solarized color theme
@@ -135,7 +137,6 @@ autocmd BufWritePre *.py execute ':Black'
 " DRAGONS
 
 " Random editing goodies
-set hlsearch
 set wildmenu
 set incsearch
 
