@@ -123,6 +123,8 @@ set cursorline
 set number
 " Highlight all search results
 set hlsearch
+" Offer completion for vim commands
+set wildmenu
 " I am using terminals with dark background themes
 set background=dark
 " Solarized color theme
@@ -137,7 +139,6 @@ autocmd BufWritePre *.py execute ':Black'
 " DRAGONS
 
 " Random editing goodies
-set wildmenu
 set incsearch
 
 set foldmethod=indent

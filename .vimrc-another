@@ -17,7 +17,6 @@ Plugin 'LanguageTool'
 
 " Git Support
 Plugin 'gregsexton/gitv'
-"Plugin 'jaxbot/github-issues.vim'
 
 " Elixir Support
 Plugin 'mattreduce/vim-mix'
