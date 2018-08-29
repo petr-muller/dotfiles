@@ -27,7 +27,6 @@ Plugin 'tpope/vim-endwise'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'tomasr/molokai'
 Plugin 'morhetz/gruvbox'
-Plugin 'zenorocha/dracula-theme', {'rtp': 'vim/'}
 Plugin 'junegunn/limelight.vim'
 Plugin 'mkarmona/colorsbox'
 Plugin 'romainl/Apprentice'

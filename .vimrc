@@ -125,6 +125,8 @@ set number
 set hlsearch
 " Offer completion for vim commands
 set wildmenu
+" Incrementally search as I type, don't wait on <enter>
+set incsearch
 " I am using terminals with dark background themes
 set background=dark
 " Solarized color theme
@@ -139,7 +141,6 @@ autocmd BufWritePre *.py execute ':Black'
 " DRAGONS
 
 " Random editing goodies
-set incsearch
 
 set foldmethod=indent
 set foldlevel=99
