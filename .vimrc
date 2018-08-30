@@ -91,7 +91,6 @@ Plugin 'altercation/vim-colors-solarized'
 
 call vundle#end()
 
-filetype plugin indent on    " required
 
 " SHORTCUTS
 
@@ -104,7 +103,7 @@ nmap <leader>G :wa<CR>:Gstatus<CR>
 
 " Editing
 " Set indentation rules based on file type
-filetype indent plugin on
+filetype plugin indent on
 " Wrap lines when buffer is too narrow
 set wrap
 " Indent with 2 spaces by default
