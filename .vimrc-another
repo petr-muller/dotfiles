@@ -19,7 +19,6 @@ Plugin 'LanguageTool'
 Plugin 'gregsexton/gitv'
 
 " Elixir Support
-Plugin 'mattreduce/vim-mix'
 Plugin 'slashmili/alchemist.vim'
 Plugin 'tpope/vim-endwise'
 

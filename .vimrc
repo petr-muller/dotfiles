@@ -126,6 +126,8 @@ set hlsearch
 set wildmenu
 " Incrementally search as I type, don't wait on <enter>
 set incsearch
+" Fold code by indent
+set foldmethod=indent
 " I am using terminals with dark background themes
 set background=dark
 " Solarized color theme
@@ -141,7 +143,6 @@ autocmd BufWritePre *.py execute ':Black'
 
 " Random editing goodies
 
-set foldmethod=indent
 set foldlevel=99
 
 let g:ycm_autoclose_preview_window_after_completion=1
