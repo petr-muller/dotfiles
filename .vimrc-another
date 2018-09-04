@@ -6,7 +6,6 @@ Plugin 'tpope/vim-speeddating'
 
 " Generic Programming Support
 Plugin 'Townk/vim-autoclose'
-Plugin 'maksimr/vim-jsbeautify'
 Plugin 'neomake/neomake'
 
 " Markdown / Writting

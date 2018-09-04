@@ -38,6 +38,8 @@ Plugin 'tpope/vim-repeat'
 Plugin 'kana/vim-textobj-user'
 " Buffergator: List, select and switch between buffers
 Plugin 'jeetsukumaran/vim-buffergator'
+" Emoji: ¯\_(ツ)_/¯
+Plugin 'junegunn/vim-emoji'
 
 " General syntax helpers
 
@@ -68,6 +70,8 @@ Plugin 'tomtom/tcomment_vim'
 Plugin 'tpope/vim-fugitive'
 " Git Log Viewer: better git log integration
 Plugin 'kablamo/vim-git-log'
+" Git Gutter
+Plugin 'airblade/vim-gitgutter'
 " FuzzyFinder: Well, fuzzy finder
 Plugin 'junegunn/fzf.vim'
 Plugin 'junegunn/fzf'
@@ -139,9 +143,20 @@ let g:black_virtualenv="/home/remote/pmuller/.vim/black"
 " Black: Reformat Python code on save
 autocmd BufWritePre *.py execute ':Black'
 
+" Emoji ☺
+augroup emoji_complete
+  autocmd!
+  autocmd FileType markdown setlocal completefunc=emoji#complete
+augroup END
+
 " DRAGONS
 
 " Random editing goodies
+
+let g:gitgutter_sign_added = emoji#for('small_blue_diamond')
+let g:gitgutter_sign_modified = emoji#for('small_orange_diamond')
+let g:gitgutter_sign_removed = emoji#for('small_red_triangle')
+let g:gitgutter_sign_modified_removed = emoji#for('collision')
 
 set foldlevel=99
 
