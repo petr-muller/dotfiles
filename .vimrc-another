@@ -18,7 +18,6 @@ Plugin 'LanguageTool'
 Plugin 'gregsexton/gitv'
 
 " Elixir Support
-Plugin 'slashmili/alchemist.vim'
 Plugin 'tpope/vim-endwise'
 
 " Theme / Interface
