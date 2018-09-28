@@ -63,6 +63,8 @@ Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'reedes/vim-textobj-quote'
 " TComment: Commenting plugins
 Plugin 'tomtom/tcomment_vim'
+" Autoclose: Automatically insert open/close characters
+Plugin 'Townk/vim-autoclose'
 
 " Integrations
 
@@ -103,6 +105,14 @@ let mapleader=","
 " git
 nmap <leader>G :wa<CR>:Gstatus<CR>
 
+" Generic
+" Make space toggle fold in normal mode
+nnoremap <space> za
+" Save & quit on 'Q' in normal mode
+nnoremap Q :w\|bd<cr>
+" Toggle NERDTree on ctrl-N
+map <C-n> :NERDTreeToggle<CR>
+
 " CONFIGURATION
 
 " Editing
@@ -132,6 +142,9 @@ set wildmenu
 set incsearch
 " Fold code by indent
 set foldmethod=indent
+" Open all folds after start
+set foldlevel=99
+
 " I am using terminals with dark background themes
 set background=dark
 " Solarized color theme
@@ -148,6 +161,14 @@ let g:gitgutter_sign_modified_removed = emoji#for('collision')
 let g:black_virtualenv="/home/remote/pmuller/.vim/black"
 " Black: Reformat Python code on save
 autocmd BufWritePre *.py execute ':Black'
+" Black: My Python lines should be 100 characters long
+let g:black_linelength=100
+" Use slightly different settings for Python files
+au BufNewFile,BufRead *.py:
+  \ set textwidth=100
+  \ set autoindent
+  \ set fileformat
+
 
 " Emoji ☺
 augroup emoji_complete
@@ -159,23 +180,7 @@ augroup END
 
 " Random editing goodies
 
-
-set foldlevel=99
-
-let g:ycm_autoclose_preview_window_after_completion=1
-
-let g:black_linelength=100
-
-au BufNewFile,BufRead *.py:
-  \ set textwidth=100
-  \ set expandtab
-  \ set autoindent
-  \ set fileformat
-
-nnoremap <space> za
-nnoremap Q :w\|bd<cr>
 noremap <Leader>s :update<CR>
-map <C-n> :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen = 1
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1

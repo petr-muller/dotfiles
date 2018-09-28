@@ -1,24 +1,16 @@
 " Utility
 Plugin 'SirVer/ultisnips'
 Plugin 'gilsondev/searchtasks.vim'
-Plugin 'tpope/vim-dispatch'
 Plugin 'tpope/vim-speeddating'
 
 " Generic Programming Support
-Plugin 'Townk/vim-autoclose'
 Plugin 'neomake/neomake'
 
 " Markdown / Writting
-Plugin 'reedes/vim-pencil'
-Plugin 'tpope/vim-markdown'
-Plugin 'jtratner/vim-flavored-markdown'
 Plugin 'LanguageTool'
 
 " Git Support
 Plugin 'gregsexton/gitv'
-
-" Elixir Support
-Plugin 'tpope/vim-endwise'
 
 " Theme / Interface
 Plugin 'ryanoasis/vim-devicons'
@@ -30,7 +22,6 @@ Plugin 'romainl/Apprentice'
 Plugin 'Lokaltog/vim-distinguished'
 Plugin 'chriskempson/base16-vim'
 Plugin 'w0ng/vim-hybrid'
-Plugin 'AlessandroYorba/Sierra'
 Plugin 'ajh17/Spacegray.vim'
 Plugin 'atelierbram/Base2Tone-vim'
 Plugin 'colepeters/spacemacs-theme.vim'
