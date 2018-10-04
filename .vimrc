@@ -145,7 +145,7 @@ let g:gitgutter_sign_modified_removed = emoji#for('collision')
 
 " Python
 " Black: This is path to plugin-internal virtualenv with black
-let g:black_virtualenv="/home/remote/pmuller/.vim/black"
+let g:black_virtualenv=$HOME."/.vim/black"
 " Black: Reformat Python code on save
 autocmd BufWritePre *.py execute ':Black'
 
