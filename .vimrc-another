@@ -3,12 +3,6 @@ Plugin 'SirVer/ultisnips'
 Plugin 'gilsondev/searchtasks.vim'
 Plugin 'tpope/vim-speeddating'
 
-" Generic Programming Support
-Plugin 'neomake/neomake'
-
-" Markdown / Writting
-Plugin 'LanguageTool'
-
 " Git Support
 Plugin 'gregsexton/gitv'
 
@@ -17,7 +11,6 @@ Plugin 'ryanoasis/vim-devicons'
 Plugin 'tomasr/molokai'
 Plugin 'morhetz/gruvbox'
 Plugin 'junegunn/limelight.vim'
-Plugin 'mkarmona/colorsbox'
 Plugin 'romainl/Apprentice'
 Plugin 'Lokaltog/vim-distinguished'
 Plugin 'chriskempson/base16-vim'
@@ -48,7 +41,7 @@ let g:WebDevIconsNerdTreeAfterGlyphPadding = ''
 " Enable highlighting of the current line
 set cursorline
 
-" Theme and Styling 
+" Theme and Styling
 syntax on
 set t_Co=256
 

@@ -97,7 +97,6 @@ Plugin 'altercation/vim-colors-solarized'
 
 call vundle#end()
 
-
 " SHORTCUTS
 
 let mapleader=","
@@ -110,8 +109,16 @@ nmap <leader>G :wa<CR>:Gstatus<CR>
 nnoremap <space> za
 " Save & quit on 'Q' in normal mode
 nnoremap Q :w\|bd<cr>
+" Save on ',s' in normal mode
+noremap <Leader>s :update<CR>
 " Toggle NERDTree on ctrl-N
 map <C-n> :NERDTreeToggle<CR>
+" Disable arrow movement
+noremap <Up> <nop>
+noremap <Down> <nop>
+noremap <Left> <nop>
+noremap <Right> <nop>
+
 
 " CONFIGURATION
 
@@ -155,6 +162,12 @@ let g:gitgutter_sign_modified = emoji#for('small_orange_diamond')
 let g:gitgutter_sign_removed = emoji#for('small_red_triangle')
 let g:gitgutter_sign_modified_removed = emoji#for('collision')
 
+" NERDTree
+" Close tree window after opening a file
+let NERDTreeQuitOnOpen = 1
+" Show less clutter
+let NERDTreeMinimalUI = 1
+
 
 " Python
 " Black: This is path to plugin-internal virtualenv with black
@@ -169,7 +182,6 @@ au BufNewFile,BufRead *.py:
   \ set autoindent
   \ set fileformat
 
-
 " Emoji ☺
 augroup emoji_complete
   autocmd!
@@ -179,16 +191,6 @@ augroup END
 " DRAGONS
 
 " Random editing goodies
-
-noremap <Leader>s :update<CR>
-let NERDTreeQuitOnOpen = 1
-let NERDTreeMinimalUI = 1
-let NERDTreeDirArrows = 1
-
-noremap <Up> <nop>
-noremap <Down> <nop>
-noremap <Left> <nop>
-noremap <Right> <nop>
 
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
