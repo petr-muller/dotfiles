@@ -118,7 +118,11 @@ noremap <Up> <nop>
 noremap <Down> <nop>
 noremap <Left> <nop>
 noremap <Right> <nop>
-
+" Make split switching easier
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-H> <C-W><C-H>
+nnoremap <C-L> <C-W><C-L>
 
 " CONFIGURATION
 
@@ -151,7 +155,6 @@ set incsearch
 set foldmethod=indent
 " Open all folds after start
 set foldlevel=99
-
 " I am using terminals with dark background themes
 set background=dark
 " Solarized color theme
@@ -161,6 +164,11 @@ let g:gitgutter_sign_added = emoji#for('small_blue_diamond')
 let g:gitgutter_sign_modified = emoji#for('small_orange_diamond')
 let g:gitgutter_sign_removed = emoji#for('small_red_triangle')
 let g:gitgutter_sign_modified_removed = emoji#for('collision')
+" Highlight trailing whitespace
+:highlight RedundantSpaces ctermbg=red guibg=red
+:match RedundantSpaces /\s\+$\| \+\ze\t/
+" Enable rainbow (better handling of parentheses)
+let g:rainbow_active = 1
 
 " NERDTree
 " Close tree window after opening a file
@@ -192,37 +200,6 @@ augroup END
 
 " Random editing goodies
 
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-H> <C-W><C-H>
-nnoremap <C-L> <C-W><C-L>
-
-noremap ěě @
-noremap ššš #
-noremap čč $
-noremap řř ~
-noremap žž ^
-noremap ýý &
-noremap áá *
-noremap íí {
-noremap éé }
-noremap úú [
-noremap ůů ;
-inoremap ěě @
-inoremap ššš #
-inoremap čč $
-inoremap řř ~
-inoremap žž ^
-inoremap ýý &
-inoremap áá *
-inoremap íí {
-inoremap éé }
-inoremap úú [
-inoremap ůů ;
-
-:highlight RedundantSpaces ctermbg=red guibg=red
-:match RedundantSpaces /\s\+$\| \+\ze\t/
-let g:rainbow_active = 1
 set laststatus=2
 au BufRead,BufNewFile *.robot setfiletype robot
 

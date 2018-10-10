@@ -1,11 +1,3 @@
-" Utility
-Plugin 'SirVer/ultisnips'
-Plugin 'gilsondev/searchtasks.vim'
-Plugin 'tpope/vim-speeddating'
-
-" Git Support
-Plugin 'gregsexton/gitv'
-
 " Theme / Interface
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'tomasr/molokai'
@@ -16,7 +8,6 @@ Plugin 'Lokaltog/vim-distinguished'
 Plugin 'chriskempson/base16-vim'
 Plugin 'w0ng/vim-hybrid'
 Plugin 'ajh17/Spacegray.vim'
-Plugin 'atelierbram/Base2Tone-vim'
 Plugin 'colepeters/spacemacs-theme.vim'
 Plugin 'dylanaraps/wal.vim'
 
