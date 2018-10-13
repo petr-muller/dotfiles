@@ -1,6 +1,5 @@
 " Theme / Interface
 Plugin 'ryanoasis/vim-devicons'
-Plugin 'tomasr/molokai'
 Plugin 'morhetz/gruvbox'
 Plugin 'junegunn/limelight.vim'
 Plugin 'romainl/Apprentice'

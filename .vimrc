@@ -201,7 +201,6 @@ augroup END
 " Random editing goodies
 
 set laststatus=2
-au BufRead,BufNewFile *.robot setfiletype robot
 
 " air-line
 let g:airline_powerline_fonts = 1
