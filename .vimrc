@@ -20,6 +20,8 @@ Bundle 'wakatime/vim-wakatime'
 
 " Airline: Improved VIM status line
 Plugin 'bling/vim-airline'
+" Airline Themes: SSIA
+Plugin 'vim-airline/vim-airline-themes'
 " NerdTree: File explorer
 Plugin 'scrooloose/nerdtree'
 " NerdTree Git: Show git status flags in NerdTree
@@ -28,6 +30,8 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'majutsushi/tagbar'
 " WindowSwap: Swap splits
 Plugin 'wesQ3/vim-windowswap'
+" Limelight: Highlight current paragraph
+Plugin 'junegunn/limelight.vim'
 
 " Shortcuts
 " Unimpaired: Handy bracket mappings
@@ -173,6 +177,10 @@ let g:gitgutter_sign_modified_removed = emoji#for('collision')
 let g:rainbow_active = 1
 " Always show the status line
 set laststatus=2
+" Use special fonts for nice Airline separators
+let g:airline_powerline_fonts = 1
+" Show line with opened buffers
+let g:airline#extensions#tabline#enabled = 1
 
 
 " NERDTree
@@ -181,6 +189,9 @@ let NERDTreeQuitOnOpen = 1
 " Show less clutter
 let NERDTreeMinimalUI = 1
 
+" Limelight
+let g:limelight_conceal_ctermfg = 'gray'
+let g:limelight_default_coefficient = 0.9
 
 " Python
 " Black: This is path to plugin-internal virtualenv with black
@@ -209,9 +220,6 @@ augroup END
 " Random editing goodies
 
 " air-line
-let g:airline_powerline_fonts = 1
-let g:airline#extensions#tabline#enabled = 1
-
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
 endif

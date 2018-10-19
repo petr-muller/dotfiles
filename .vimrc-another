@@ -1,7 +1,6 @@
 " Theme / Interface
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'morhetz/gruvbox'
-Plugin 'junegunn/limelight.vim'
 Plugin 'romainl/Apprentice'
 Plugin 'Lokaltog/vim-distinguished'
 Plugin 'chriskempson/base16-vim'
