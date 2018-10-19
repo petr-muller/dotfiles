@@ -137,6 +137,8 @@ set shiftwidth=2
 set expandtab
 " Show tabs as two spaces wide
 set tabstop=2
+" Save automatically on some actions
+set autowrite
 
 " UI
 " Highlight all syntax
@@ -169,6 +171,9 @@ let g:gitgutter_sign_modified_removed = emoji#for('collision')
 :match RedundantSpaces /\s\+$\| \+\ze\t/
 " Enable rainbow (better handling of parentheses)
 let g:rainbow_active = 1
+" Always show the status line
+set laststatus=2
+
 
 " NERDTree
 " Close tree window after opening a file
@@ -190,6 +195,9 @@ au BufNewFile,BufRead *.py:
   \ set autoindent
   \ set fileformat
 
+" Go
+autocmd FileType go nmap <leader>b :make<CR>
+
 " Emoji ☺
 augroup emoji_complete
   autocmd!
@@ -199,8 +207,6 @@ augroup END
 " DRAGONS
 
 " Random editing goodies
-
-set laststatus=2
 
 " air-line
 let g:airline_powerline_fonts = 1

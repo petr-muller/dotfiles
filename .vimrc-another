@@ -6,7 +6,6 @@ Plugin 'romainl/Apprentice'
 Plugin 'Lokaltog/vim-distinguished'
 Plugin 'chriskempson/base16-vim'
 Plugin 'w0ng/vim-hybrid'
-Plugin 'ajh17/Spacegray.vim'
 Plugin 'colepeters/spacemacs-theme.vim'
 Plugin 'dylanaraps/wal.vim'
 
