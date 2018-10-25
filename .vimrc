@@ -217,6 +217,9 @@ au BufNewFile,BufRead *.py:
   \ set textwidth=100
   \ set autoindent
   \ set fileformat
+" Use local .pylintrc and Python3 for syntastic
+let g:syntastic_python_pylint_args = "--rcfile=.pylintrc"
+let g:syntastic_python_python_exec = '/usr/bin/python3'
 
 " Go
 autocmd FileType go nmap <leader>b :make<CR>
@@ -231,8 +234,6 @@ augroup END
 
 " Random editing goodies
 
-let g:syntastic_python_pylint_args = "--rcfile=.pylintrc"
-let g:syntastic_python_python_exec = '/usr/bin/python3'
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
