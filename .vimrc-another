@@ -3,7 +3,6 @@ Plugin 'ryanoasis/vim-devicons'
 Plugin 'morhetz/gruvbox'
 Plugin 'Lokaltog/vim-distinguished'
 Plugin 'w0ng/vim-hybrid'
-Plugin 'colepeters/spacemacs-theme.vim'
 Plugin 'dylanaraps/wal.vim'
 
 " Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'

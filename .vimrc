@@ -205,6 +205,10 @@ let NERDTreeMinimalUI = 1
 let g:limelight_conceal_ctermfg = 'gray'
 let g:limelight_default_coefficient = 0.9
 
+" Systastic
+" Populate loclist automatically, not just on :Errors
+let g:syntastic_always_populate_loc_list = 1
+
 " Python
 " Black: This is path to plugin-internal virtualenv with black
 let g:black_virtualenv=$HOME."/.vim/black"
@@ -234,7 +238,6 @@ augroup END
 
 " Random editing goodies
 
-let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
