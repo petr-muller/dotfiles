@@ -208,6 +208,8 @@ let g:limelight_default_coefficient = 0.9
 " Systastic
 " Populate loclist automatically, not just on :Errors
 let g:syntastic_always_populate_loc_list = 1
+" Open loc list when there are errors, and close when not
+let g:syntastic_auto_loc_list = 1
 
 " Python
 " Black: This is path to plugin-internal virtualenv with black
@@ -238,7 +240,6 @@ augroup END
 
 " Random editing goodies
 
-let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_go_checkers = ['gofmt', 'golint']
@@ -260,8 +261,8 @@ let g:elite_mode=1
 
 " Disable arrow movement, resize splits instead.
 if get(g:, 'elite_mode')
-	nnoremap <Up>    :resize +2<CR>
-	nnoremap <Down>  :resize -2<CR>
-	nnoremap <Left>  :vertical resize +2<CR>
-	nnoremap <Right> :vertical resize -2<CR>
+  nnoremap <Up>    :resize +2<CR>
+  nnoremap <Down>  :resize -2<CR>
+  nnoremap <Left>  :vertical resize +2<CR>
+  nnoremap <Right> :vertical resize -2<CR>
 endif
