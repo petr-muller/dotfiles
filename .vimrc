@@ -210,6 +210,8 @@ let g:limelight_default_coefficient = 0.9
 let g:syntastic_always_populate_loc_list = 1
 " Open loc list when there are errors, and close when not
 let g:syntastic_auto_loc_list = 1
+" Run checkers on opening a file
+let g:syntastic_check_on_open = 1
 
 " Python
 " Black: This is path to plugin-internal virtualenv with black
@@ -240,7 +242,6 @@ augroup END
 
 " Random editing goodies
 
-let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_go_checkers = ['gofmt', 'golint']
 
