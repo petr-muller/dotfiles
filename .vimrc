@@ -28,8 +28,6 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 " TagBar: Tag explorer
 Plugin 'majutsushi/tagbar'
-" WindowSwap: Swap splits
-Plugin 'wesQ3/vim-windowswap'
 " Limelight: Highlight current paragraph
 Plugin 'junegunn/limelight.vim'
 
@@ -81,6 +79,8 @@ Plugin 'airblade/vim-gitgutter'
 " FuzzyFinder: Well, fuzzy finder
 Plugin 'junegunn/fzf.vim'
 Plugin 'junegunn/fzf'
+" VimWiki: Wiki for vim (experiment to set up a PKB)
+Plugin 'vimwiki/vimwiki'
 
 " Python
 
@@ -262,3 +262,6 @@ if get(g:, 'elite_mode')
 	nnoremap <Left>  :vertical resize +2<CR>
 	nnoremap <Right> :vertical resize -2<CR>
 endif
+
+let g:vimwiki_list = [{'path': '~/Projects/Personal/PKB'}]
+au BufRead,BufNewFile *.wiki set filetype=vimwiki
