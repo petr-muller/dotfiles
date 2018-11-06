@@ -212,6 +212,8 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 " Run checkers on opening a file
 let g:syntastic_check_on_open = 1
+" Do not run checkers on save & exit
+let g:syntastic_check_on_wq = 0
 
 " Python
 " Black: This is path to plugin-internal virtualenv with black
@@ -242,7 +244,6 @@ augroup END
 
 " Random editing goodies
 
-let g:syntastic_check_on_wq = 0
 let g:syntastic_go_checkers = ['gofmt', 'golint']
 
 nnoremap <leader><space> :nohlsearch<CR>
@@ -270,3 +271,4 @@ endif
 
 let g:vimwiki_list = [{'path': '~/Projects/Personal/PKB'}]
 au BufRead,BufNewFile *.wiki set filetype=vimwiki
+let g:gutentags_exclude_project_root = [$HOME]
