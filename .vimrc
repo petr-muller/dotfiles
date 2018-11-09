@@ -99,6 +99,9 @@ Plugin  'fatih/vim-go'
 " Solarized: Precision colors for machines and people
 Plugin 'altercation/vim-colors-solarized'
 
+" Devicons: Pretty glyphs
+Plugin 'ryanoasis/vim-devicons'
+
 call vundle#end()
 
 " SHORTCUTS
@@ -233,6 +236,8 @@ let g:syntastic_python_python_exec = '/usr/bin/python3'
 
 " Go
 autocmd FileType go nmap <leader>b :make<CR>
+" Use both `gofmt` and `golint` in Syntastic
+let g:syntastic_go_checkers = ['gofmt', 'golint']
 
 " Emoji ☺
 augroup emoji_complete
@@ -243,8 +248,6 @@ augroup END
 " DRAGONS
 
 " Random editing goodies
-
-let g:syntastic_go_checkers = ['gofmt', 'golint']
 
 nnoremap <leader><space> :nohlsearch<CR>
 nnoremap <leader>tb :TagbarToggle<CR>

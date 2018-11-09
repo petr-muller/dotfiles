@@ -1,5 +1,4 @@
 " Theme / Interface
-Plugin 'ryanoasis/vim-devicons'
 Plugin 'dylanaraps/wal.vim'
 
 " Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
