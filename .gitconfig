@@ -37,5 +37,6 @@
 	remote = origin
 [core]
 	editor = vim
+	excludesfile = /home/remote/pmuller/.gitignore_global
 [includeIf "gitdir:~/Projects/RH/**"]
   path = .gitconfig-redhat
