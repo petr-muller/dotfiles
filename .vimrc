@@ -132,6 +132,14 @@ nnoremap <C-H> <C-W><C-H>
 nnoremap <C-L> <C-W><C-L>
 " Clear search highlights on ,<space>
 nnoremap <leader><space> :nohlsearch<CR>
+" Toggle a panel showing tags
+nnoremap <leader>tb :TagbarToggle<CR>
+" Arrows resize splits, do not move cursor
+nnoremap <Up>    :resize +2<CR>
+nnoremap <Down>  :resize -2<CR>
+nnoremap <Left>  :vertical resize +2<CR>
+nnoremap <Right> :vertical resize -2<CR>
+
 
 " CONFIGURATION
 
@@ -247,13 +255,14 @@ augroup emoji_complete
   autocmd FileType markdown setlocal completefunc=emoji#complete
 augroup END
 
+" WakaTime
+" Use Python 3 for running WakaTime
+let g:wakatime_PythonBinary = '/usr/bin/python3'
+
+
 " DRAGONS
 
 " Random editing goodies
-
-nnoremap <leader>tb :TagbarToggle<CR>
-
-let g:wakatime_PythonBinary = '/usr/bin/python3'
 
 augroup textobj_quote
   autocmd!
@@ -261,17 +270,6 @@ augroup textobj_quote
   autocmd FileType textile call textobj#quote#init()
   autocmd FileType text call textobj#quote#init({'educate': 0})
 augroup END
-
-" Enable Elite mode, No ARRRROWWS!!!!
-let g:elite_mode=1
-
-" Disable arrow movement, resize splits instead.
-if get(g:, 'elite_mode')
-  nnoremap <Up>    :resize +2<CR>
-  nnoremap <Down>  :resize -2<CR>
-  nnoremap <Left>  :vertical resize +2<CR>
-  nnoremap <Right> :vertical resize -2<CR>
-endif
 
 let g:vimwiki_list = [{'path': '~/Projects/Personal/PKB'}]
 au BufRead,BufNewFile *.wiki set filetype=vimwiki
