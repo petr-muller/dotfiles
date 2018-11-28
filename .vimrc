@@ -139,7 +139,9 @@ nnoremap <Up>    :resize +2<CR>
 nnoremap <Down>  :resize -2<CR>
 nnoremap <Left>  :vertical resize +2<CR>
 nnoremap <Right> :vertical resize -2<CR>
-
+" Easier movement to beginning/end of line
+nnoremap H ^
+nnoremap L g_
 
 " CONFIGURATION
 
@@ -255,6 +257,14 @@ augroup emoji_complete
   autocmd FileType markdown setlocal completefunc=emoji#complete
 augroup END
 
+" Use typographic quotes in markdown and text files
+augroup textobj_quote
+  autocmd!
+  autocmd FileType markdown call textobj#quote#init()
+  autocmd FileType textile call textobj#quote#init()
+  autocmd FileType text call textobj#quote#init({'educate': 0})
+augroup END
+
 " WakaTime
 " Use Python 3 for running WakaTime
 let g:wakatime_PythonBinary = '/usr/bin/python3'
@@ -264,12 +274,6 @@ let g:wakatime_PythonBinary = '/usr/bin/python3'
 
 " Random editing goodies
 
-augroup textobj_quote
-  autocmd!
-  autocmd FileType markdown call textobj#quote#init()
-  autocmd FileType textile call textobj#quote#init()
-  autocmd FileType text call textobj#quote#init({'educate': 0})
-augroup END
 
 let g:vimwiki_list = [{'path': '~/Projects/Personal/PKB'}]
 au BufRead,BufNewFile *.wiki set filetype=vimwiki
