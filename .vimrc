@@ -269,12 +269,10 @@ augroup END
 " Use Python 3 for running WakaTime
 let g:wakatime_PythonBinary = '/usr/bin/python3'
 
+" Gutentags
+" Do not attempt to compute tags in $HOME (avoid CPU spikes)
+let g:gutentags_exclude_project_root = [$HOME]
 
-" DRAGONS
-
-" Random editing goodies
-
-
+" Vimwiki
 let g:vimwiki_list = [{'path': '~/Projects/Personal/PKB'}]
 au BufRead,BufNewFile *.wiki set filetype=vimwiki
-let g:gutentags_exclude_project_root = [$HOME]
