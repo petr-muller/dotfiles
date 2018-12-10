@@ -258,8 +258,6 @@ autocmd FileType go nmap <leader>d :GoDoc<CR>
 autocmd Filetype go command! -bang AV call go#alternate#Switch(<bang>0, 'vsplit')
 " Use both `gofmt` and `golint` in Syntastic
 let g:syntastic_go_checkers = ['gofmt', 'golint']
-" Use 'goimports' instead fmt to fixup imports too
-let g:go_fmt_command = "goimports"
 " Nicer syntax highlights
 let g:go_highlight_types = 1
 let g:go_highlight_fields = 1
