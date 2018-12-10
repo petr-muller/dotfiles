@@ -211,6 +211,7 @@ let g:airline_symbols.branch = ''
 let g:airline_symbols.paste = '∥'
 let g:airline_symbols.whitespace = 'Ξ'
 let g:airline_symbols.readonly = ''
+let g:airline_theme='solarized'
 
 " NERDTree
 " Close tree window after opening a file
