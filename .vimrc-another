@@ -1,16 +1,3 @@
-" Syntastic Configuration
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-" let g:syntastic_check_on_wq = 0
-" let g:syntastic_enable_elixir_checker = 1
-" let g:syntastic_elixir_checkers = ["elixir"]
-
-" Neomake settings
-autocmd! BufWritePost * Neomake
-let g:neomake_elixir_enabled_makers = ['mix', 'credo', 'dogma']
-
 " Vim-PDV Configuration
 let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
 
