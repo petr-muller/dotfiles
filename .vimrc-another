@@ -1,16 +1,3 @@
-" Vim-PDV Configuration
-let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
-
-" Markdown Syntax Support
-augroup markdown
-  au!
-  au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
-augroup END
-
-" Vim-Alchemist Configuration
-let g:alchemist#elixir_erlang_src = "/Users/amacgregor/Projects/Github/alchemist-source"
-let g:alchemist_tag_disable = 1
-
 " Vim-Supertab Configuration
 let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 
