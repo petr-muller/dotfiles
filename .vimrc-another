@@ -1,6 +1,3 @@
-" Vim-Supertab Configuration
-let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
-
 " Settings for Writting
 let g:pencil#wrapModeDefault = 'soft'   " default is 'hard'
 let g:languagetool_jar  = '/opt/languagetool/languagetool-commandline.jar'
