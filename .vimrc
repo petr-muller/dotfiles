@@ -135,7 +135,7 @@ nnoremap <C-L> <C-W><C-L>
 " Clear search highlights on ,<space>
 nnoremap <leader><space> :nohlsearch<CR>
 " Toggle a panel showing tags
-nnoremap <leader>tb :TagbarToggle<CR>
+nnoremap <C-m> :TagbarToggle<CR>
 " Arrows resize splits, do not move cursor
 nnoremap <Up>    :resize +2<CR>
 nnoremap <Down>  :resize -2<CR>
