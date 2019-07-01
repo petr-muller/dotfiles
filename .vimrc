@@ -51,8 +51,6 @@ Plugin 'luochen1990/rainbow'
 Plugin 'godlygeek/tabular'
 " Syntastic: Syntax checking
 Plugin 'scrooloose/syntastic'
-" Gutentags: Manage tag files
-Plugin 'ludovicchabant/vim-gutentags'
 " Surround: Quoting and parenthesizing made simple
 Plugin 'tpope/vim-surround'
 " Jedi: Autocompletion for Python
@@ -282,10 +280,6 @@ augroup END
 " WakaTime
 " Use Python 3 for running WakaTime
 let g:wakatime_PythonBinary = '/usr/bin/python3'
-
-" Gutentags
-" Do not attempt to compute tags in $HOME (avoid CPU spikes)
-let g:gutentags_exclude_project_root = [$HOME]
 
 " Vimwiki
 let g:vimwiki_list = [{'path': '~/Projects/Personal/PKB'}]
